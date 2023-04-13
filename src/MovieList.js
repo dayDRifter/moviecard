@@ -1,24 +1,26 @@
 import { React, Component } from "react";
 import MovieCard from "./Moviecard";
-
 class MovieList extends Component {
-  constructor() {
-    super();
-    this.state = {
-      title: "The Avengers",
-      plot: "Supernatural powers shown in the movie",
-      price: 199,
-      rating: 8.9,
-      star: 0,
-      fav: true,
-      cart: true,
-    };
-  }
   render() {
-    const { title, plot, price, rating, star, fav, cart } = this.state;
+    // const { title, plot, price, rating, star, fav, cart, poster } =
+    //   this.state.movies;
+    const { movies, addStars, decStars, toggleCart, toggleFav } = this.props;
+    //   const { addStars, decStars, toggleCart, toggleFav } =
+    //     this.props;
+
     return (
       <>
-        <MovieCard movies={this.state} />
+        {movies.map((movies) => (
+          <MovieCard
+            movies={movies}
+            addStars={addStars}
+            decStars={decStars}
+            toggleCart={toggleCart}
+            toggleFav={toggleFav}
+            // toggle={toggle}
+            key={movies.id}
+          />
+        ))}
       </>
     );
   }

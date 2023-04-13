@@ -11,39 +11,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.main {
+/* .main {
   width: 70%;
   margin: 0 auto;
   margin-top: 30px;
   padding: 0 20px;
   box-sizing: border-box;
-}
-.movie-card {
+} */
+/* .movie-card {
   background: #aaa3a3;
   padding: 0;
   border: none;
   border-radius: 10px;
   display: flex;
 
-}
 
-.movie-card:not(:first-child){
+} */
+
+
+/* .movie-card:not(:first-child){
   margin-top: 20px;
-}
-.movie-card:last-child {
+} */
+/* .movie-card:last-child {
   margin-bottom: 50px;
-}
-.movie-card .left{
+} */
+/* .movie-card .left{
   flex: 1;
   padding: 5px;
-}
-.movie-card .left img{
+} */
+/* .movie-card .left img{
   height: 250px;
-}
-.movie-card .right{
+} */
+/* .movie-card .right{
   position: relative;
   flex: 10;
-}
+} */
 .movie-card .title{
   padding: 10px 20px;
   font-size: 25px;
@@ -137,4 +139,14 @@ code {
   color: #fff;
   text-shadow: none;
   margin: 5px;
+}
+.nav{
+  font-size: 30;
+    color: #fff;
+    font-weight: 60;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    margin-left: 20;
+    height: 50;
+      background: orange;
 }
